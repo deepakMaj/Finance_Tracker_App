@@ -6763,6 +6763,11 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
+twitter-bootstrap@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/twitter-bootstrap/-/twitter-bootstrap-2.1.1.tgz#591a0f05bd79eb92acba5a3e2cb577179dde8784"
+  integrity sha1-WRoPBb1565Ksulo+LLV3F53eh4Q=
+
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
