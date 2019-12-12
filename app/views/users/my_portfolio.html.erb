@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 align="center" class="header1">My Portfolio</h1>
+  <div class="row col-md-12">
+  <h3 class="header2">Search for Stocks ~></h3>
+</div>
+<div id="stockid">
+  <%= form_tag search_stocks_path, remote: true, method: :get, id: "lookup-stock" do%>
+  <div class="form-group row no-padding text-center col-md-12">
+    <div class="col-md-10">
+      <%= text_field_tag :stock, params[:stock], placeholder: "Enter stock ticker symbol", autofocus: true,
+          class: "form-control search-box input-lg" %>
+    </div>
+      <div class="col-md-2">
+        <%= button_tag(type: :submit, class: "btn btn-success") do %>
+          <i class="fa fa-search"></i> Search for Stock
+        <% end %>
+      </div>
+  </div>
+  <% end %>
+</div>
+<div id="results">
+  <%= render 'result' %>
+</div>
