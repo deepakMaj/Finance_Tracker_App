@@ -1,5 +1,6 @@
 class Stock < ApplicationRecord
-
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
   def self.new_form_lookup(ticker_symbol)
     StockQuote::Stock.new(api_key: 'sk_366a339ab2db47f5aaba40723cf94d40')
     begin

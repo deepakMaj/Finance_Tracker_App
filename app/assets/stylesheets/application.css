@@ -37,3 +37,8 @@
  .result-block{
    display: inline-block;
  }
+
+ .mod{
+   margin-top: 0px;
+   margin-left: 10px;
+ }
