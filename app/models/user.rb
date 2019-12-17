@@ -20,4 +20,8 @@ class User < ApplicationRecord
     under_stock_limit? && !stock_already_added?(ticker_symbol)
   end
 
+  def full_name
+    return "#{first_name} #{last_name}".strip if(first_name || last_name)
+    "Anonymous"
+  end
 end
